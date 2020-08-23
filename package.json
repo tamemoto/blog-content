@@ -9,7 +9,18 @@
     "generate": "nuxt generate"
   },
   "dependencies": {
+    "@babel/polyfill": "^7.10.4",
+    "@nuxt/content": "^1.6.1",
     "nuxt": "^2.14.0"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "@babel/core": "^7.11.4",
+    "@babel/preset-env": "^7.11.0",
+    "@babel/register": "^7.10.5",
+    "@nuxtjs/vuetify": "^1.11.2",
+    "babel-loader": "^8.1.0",
+    "fibers": "^5.0.0",
+    "sass": "^1.26.10",
+    "sass-loader": "^9.0.3"
+  }
 }
