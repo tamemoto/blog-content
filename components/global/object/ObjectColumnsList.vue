@@ -10,7 +10,7 @@
         outlined
         class="mx-auto c-card"
         width="100%"
-        :to="`${item.dir}`"
+        :to="`${item.path}`"
       >
         <div class="c-card__item">
           <div class="c-card__image">
@@ -39,6 +39,7 @@
                 dark
                 label
                 class="font-weight-bold"
+                :color="categoryColor(item.category)"
               >
                 {{ item.category }}
               </v-chip>
@@ -51,32 +52,38 @@
 </template>
 
 <script>
-    export default {
-        props: {
-            lists: {
-                type: Array,
-                default: () => []
-            }
-        },
-        data() {
-            return {
-                columns: [
-                    { color: "#336db4", value: 1 },
-                    { color: "#7c6766", value: 2 },
-                    { color: "#b84640", value: 3 },
-                    { color: "#98CA6F", value: 4 },
-                ]
-            }
-        },
-        computed: {
-            categoryColor() {
-            }
-        }
-    }
+  export default {
+      props: {
+          lists: {
+              type: Array,
+              default: () => []
+          }
+      },
+      data() {
+          return {
+              columns: [
+                  { color: "#336db4", value: "web" },
+                  { color: "#7c6766", value: "design" },
+                  { color: "#b84640", value: "thought" },
+                  { color: "#98CA6F", value: "product" },
+              ]
+          }
+      },
+      computed: {
+          categoryColor() {
+              return (category) => {
+                  const {color} = this.columns.find(column => {
+                      return column.value === category
+                  })
+                  return color
+              }
+          },
+      }
+  }
 </script>
 
 <style lang="scss" scoped>
-  @import "~assets/scss/mixins.scss";
+  @import "~@/assets/scss/mixins.scss";
   .c-card {
     &__item {
       @include tablet {

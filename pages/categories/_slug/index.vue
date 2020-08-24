@@ -14,6 +14,7 @@
     export default {
         async asyncData ({ $content, params }) {
             const categories = await $content('categories', params.slug).fetch()
+            console.log(categories)
             return {
                 categories
             }

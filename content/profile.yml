@@ -1,0 +1,10 @@
+profile:
+  name: yusuke
+  image: /images/profile/my-image.jpg
+  tools:
+    -
+      icon: github
+      url: https://github.com/tamemoto
+    -
+      icon: twitter
+      url: https://twitter.com/yusuke_prog_web

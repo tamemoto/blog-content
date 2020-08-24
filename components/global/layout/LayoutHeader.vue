@@ -4,7 +4,7 @@
     <v-toolbar-title>
       <router-link to="/">
         <h1>
-          ほげ
+          <v-img width="128" :src="require('~/assets/images/logo.png')" />
         </h1>
       </router-link>
     </v-toolbar-title>
@@ -35,7 +35,7 @@
 </script>
 
 <style lang="scss" scoped>
-  @import "~assets/scss/mixins.scss";
+  @import "~@/assets/scss/mixins.scss";
   .theme--light.v-app-bar.v-toolbar.v-sheet {
     background: $clr-white;
     border-bottom: solid 1px $clr-gray;

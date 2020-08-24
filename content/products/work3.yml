@@ -1,0 +1,7 @@
+product:
+  id: 3
+  title: スライドショー(大学課題)
+  text: Webpackとtailwind.css、ejsを理解するために作成してみました。
+  image: /images/products/noimage.png
+  url: https://pensive-golick-e4b4a1.netlify.app/myslideshow.html
+  label: JS
