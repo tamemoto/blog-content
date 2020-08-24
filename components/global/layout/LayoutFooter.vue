@@ -2,7 +2,7 @@
   <v-footer>
     <v-container v-if="profile" fluid>
       <div class="l-footer__container">
-        <ObjectTagTable />
+        <ObjectTagTable class="mb-5" />
         <v-card outlined class="pa-5">
           <v-card-title class="pl-0 pb-3">
             <h3>

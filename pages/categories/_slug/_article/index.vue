@@ -8,7 +8,7 @@
     />
     <section class="my-5">
       <div class="p-column__time mb-5">
-        {{ article.date }}
+        {{ dateTime(article.date) }}
       </div>
       <h1 class="mb-5">
         {{ article.title }}
@@ -25,41 +25,46 @@
     </section>
     <v-divider class="mb-5" />
     <nuxt-content
-      class="p-column__content"
       :document="article"
     />
   </v-container>
 </template>
 
 <script>
-    export default {
-        data() {
-            return {
-                columns: [
-                    { color: "#336db4", value: "web" },
-                    { color: "#7c6766", value: "design" },
-                    { color: "#b84640", value: "thought" },
-                    { color: "#98CA6F", value: "product" },
-                ]
-            }
-        },
-        async asyncData({ $content, params }) {
-            const article = await $content(`/categories/${params.slug}/${params.article}`).fetch()
-            return {
-                article
-            }
-        },
-        computed: {
-            categoryColor() {
-                return (category) => {
-                    const { color } = this.columns.find(column => {
-                        return column.value === category
-                    })
-                    return color
-                }
-            },
-        }
-    }
+  import { dateService } from "@/service/DateService"
+  export default {
+      data() {
+          return {
+              columns: [
+                  { color: "#336db4", value: "web" },
+                  { color: "#7c6766", value: "design" },
+                  { color: "#b84640", value: "thought" },
+                  { color: "#98CA6F", value: "product" },
+              ]
+          }
+      },
+      async asyncData({ $content, params }) {
+          const article = await $content(`/categories/${params.slug}/${params.article}`).fetch()
+          return {
+              article
+          }
+      },
+      computed: {
+          categoryColor() {
+              return (category) => {
+                  const { color } = this.columns.find(column => {
+                      return column.value === category
+                  })
+                  return color
+              }
+          },
+          dateTime() {
+              return time => {
+                  return dateService.publishedAt(time)
+              }
+          }
+      }
+  }
 </script>
 
 <style lang="scss" scoped>
@@ -69,33 +74,33 @@
       font-weight: bold;
       color: $clr-gray;
     }
-    &__content {
-      display: table;
-      table-layout: fixed;
-      width: 100%;
-      &::v-deep h2 {
+  }
+   .nuxt-content {
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+    h2 {
+      margin-bottom: 36px
+    }
+    p {
+      color: $clr-black;
+      line-height: 2.5;
+      margin-bottom: 28px;
+      @include desktop {
         margin-bottom: 36px;
-      }
-      &::v-deep p {
-        color: $clr-black;
         line-height: 2.5;
-        margin-bottom: 28px;
-        @include desktop {
-          margin-bottom: 36px;
-          line-height: 2.5;
-        }
       }
-      &::v-deep img {
-        display: block;
-        margin: 0 auto;
-        width: 100%;
-      }
-      &::v-deep a {
-        color: #2d8fd5;
-      }
-      &::v-deep pre[class*="language-"] {
-        -webkit-overflow-scrolling: touch;
-      }
+    }
+    img {
+      display: block;
+      margin: 0 auto;
+      width: 100%;
+    }
+    a {
+      color: #2d8fd5;
+    }
+    pre[class*="language-"] {
+      -webkit-overflow-scrolling: touch;
     }
   }
 </style>

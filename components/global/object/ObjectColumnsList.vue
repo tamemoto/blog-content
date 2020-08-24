@@ -31,7 +31,7 @@
               {{ item.description }}
             </v-card-text>
             <span class="c-card__time pl-4">
-              {{ item.date }}
+              {{ dateTime(item.date) }}
             </span>
             <v-card-text>
               <v-chip
@@ -52,6 +52,7 @@
 </template>
 
 <script>
+  import { dateService } from "@/service/DateService"
   export default {
       props: {
           lists: {
@@ -78,6 +79,11 @@
                   return color
               }
           },
+          dateTime() {
+              return time => {
+                  return dateService.publishedAt(time)
+              }
+          }
       }
   }
 </script>
