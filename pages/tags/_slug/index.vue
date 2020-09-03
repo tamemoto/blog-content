@@ -4,7 +4,7 @@
       class="d-flex flex-wrap justify-center"
     >
       <ObjectColumnsList
-        :lists="categories"
+        :lists="relatedArticles"
       />
     </div>
   </v-container>
@@ -13,10 +13,9 @@
 <script>
     export default {
         async asyncData ({ $content, params }) {
-            const categories = await $content('categories', params.slug).fetch()
-            console.log(categories)
+            const relatedArticles = await $content('categories', { deep: true }).where({'tags': {$contains: [params.slug]}}).fetch()
             return {
-                categories
+                relatedArticles
             }
         }
     }

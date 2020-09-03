@@ -27,6 +27,19 @@
     <nuxt-content
       :document="article"
     />
+    <nuxt-link
+      v-for="tag in article.tags"
+      :key="tag.index"
+      :to="`/tags/${tag}`"
+      class="p-column__tag"
+    >
+      <v-chip
+        class="ma-2"
+        label
+      >
+        #{{ tag }}
+      </v-chip>
+    </nuxt-link>
   </v-container>
 </template>
 
@@ -73,6 +86,9 @@
     &__time {
       font-weight: bold;
       color: $clr-gray;
+    }
+    &__tag {
+      text-decoration: none;
     }
   }
    .nuxt-content {
