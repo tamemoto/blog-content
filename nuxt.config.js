@@ -15,6 +15,9 @@ export default {
   ** See https://nuxtjs.org/api/configuration-head
   */
   head: {
+    htmlAttrs: {
+      lang: "ja"
+    },
     title: process.env.npm_package_name || '',
     meta: [
       { charset: 'utf-8' },
@@ -61,6 +64,23 @@ export default {
   build: {
   },
   generate: {
-    fallback: true
+    fallback: true,
+    crawler: false,
+    async routes() {
+        const result = []
+        const { $content } = require('@nuxt/content')
+        const data = await $content("categories", { deep: true }).only(["path", "dir", "tags"]).fetch()
+        for(let path of data) {
+          result.push(path.path)
+          result.push(path.dir)
+          for(let tag of path.tags) {
+            if(result.includes(`/tags/${tag}`)) {
+              continue
+            }
+            result.push(`/tags/${tag}`)
+          }
+        }
+        return result
+    }
   }
 }
