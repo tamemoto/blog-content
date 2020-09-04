@@ -3,10 +3,8 @@
     <v-container v-if="profile" fluid>
       <div class="l-footer__container">
         <v-card outlined class="pa-5">
-          <v-card-title class="pl-0 pb-3">
-            <h3>
-              PROFILE
-            </h3>
+          <v-card-title class="font-weight-bold pl-0 pb-3">
+            PROFILE
           </v-card-title>
           <v-divider />
           <div class="text-center pt-5">

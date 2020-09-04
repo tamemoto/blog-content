@@ -23,7 +23,7 @@
             />
           </div>
           <div class="c-card__body">
-            <v-card-title class="c-card__title">
+            <v-card-title class="font-weight-bold">
               {{ item.title }}
             </v-card-title>
             <v-card-text class="c-card__text">
@@ -101,9 +101,6 @@
         justify-content: space-between;
         flex-direction: row-reverse;
       }
-    }
-    &__title {
-      font-weight: bold;
     }
     &__text {
       word-break: break-all;
