@@ -14,10 +14,8 @@
                 alt="プロフィール画像"
               />
             </v-avatar>
-            <v-card-subtitle>
-              <h3>
-                {{ profile.name }}
-              </h3>
+            <v-card-subtitle class="font-weight-bold l-profile__name">
+              {{ profile.name }}
             </v-card-subtitle>
           </div>
           <v-card-actions class="d-flex justify-center">
@@ -64,6 +62,9 @@
     }
   }
   .l-profile {
+    &__name {
+      color: $clr-gray;
+    }
     &__link {
       text-decoration: none;
     }
