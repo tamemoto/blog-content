@@ -71,9 +71,6 @@
               ]
           }
       },
-      mounted() {
-          console.log(this.lists)
-      },
       computed: {
           categoryColor() {
               return (category) => {
