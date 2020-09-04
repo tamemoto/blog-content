@@ -2,7 +2,8 @@
 title: Vue Routerで初めてwatchを使った話
 description: 今までのWEB制作ではあまり目にしたことがなかったのですが。ついこないだ遭遇してつまづいてしまいました。。。今回はその備忘録として残します。
 date: 2020-04-10
-tags: [Nuxt]
+image: article-1.jpg
+tags: [Nuxt.js]
 category: web
 ---
 

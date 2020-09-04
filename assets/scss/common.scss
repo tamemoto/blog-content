@@ -7,6 +7,34 @@
     .v-main__wrap {
       @include container
     }
+    .nuxt-content {
+      display: table;
+      table-layout: fixed;
+      width: 100%;
+      h2 {
+        margin-bottom: 20px
+      }
+      p {
+        color: $clr-black;
+        line-height: 2.5;
+        margin-bottom: 42px;
+        @include desktop {
+          margin-bottom: 58px;
+          line-height: 2.5;
+        }
+      }
+      img {
+        display: block;
+        margin: 0 auto;
+        width: 100%;
+      }
+      a {
+        color: #2d8fd5;
+      }
+      pre[class*="language-"] {
+        -webkit-overflow-scrolling: touch;
+      }
+    }
   }
 }
 

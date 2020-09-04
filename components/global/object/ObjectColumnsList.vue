@@ -15,8 +15,9 @@
         <div class="c-card__item">
           <div class="c-card__image">
             <v-img
-              src="https://placehold.jp/150x150.png"
+              :src="`/images/${item.category}/${item.image}`"
               :aspect-ratio="16/9"
+              alt="アイキャッチ画像"
               width="100%"
               height="100%"
             />
@@ -69,6 +70,9 @@
                   { color: "#98CA6F", value: "product" },
               ]
           }
+      },
+      mounted() {
+          console.log(this.lists)
       },
       computed: {
           categoryColor() {

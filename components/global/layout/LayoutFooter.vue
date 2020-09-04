@@ -13,6 +13,7 @@
             <v-avatar size="75">
               <v-img
                 :src="`${profile.image}`"
+                alt="プロフィール画像"
               />
             </v-avatar>
             <v-card-subtitle>
@@ -26,7 +27,9 @@
               v-for="tool in profile.tools"
               :key="tool.index"
               :href="`${tool.url}`"
+              :aria-label="`${tool.icon}`"
               target="_blank"
+              rel="noopener"
               class="l-profile__link ma-2"
             >
               <v-icon>
