@@ -2,7 +2,7 @@
   <v-app-bar elevation="0" app>
     <v-spacer />
     <v-toolbar-title>
-      <router-link to="/">
+      <router-link to="/" aria-label="トップページへ戻る">
         <h1>
           <v-img width="128" :src="require('~/assets/images/logo.png')" />
         </h1>
@@ -38,7 +38,7 @@
   @import "~@/assets/scss/mixins.scss";
   .theme--light.v-app-bar.v-toolbar.v-sheet {
     background: $clr-white;
-    border-bottom: solid 1px $clr-gray;
+    border-bottom: solid 1px $clr-lightgray;
   }
   .v-application .c-nav {
     &__link {
