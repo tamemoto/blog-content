@@ -8,7 +8,7 @@
       alt="アイキャッチ画像"
     />
     <section class="my-5">
-      <div class="p-column__time mb-5">
+      <div class="p-column__time mb-5 font-weight-bold">
         {{ dateTime(article.date) }}
       </div>
       <h1 class="mb-5">
@@ -27,7 +27,7 @@
     <v-divider class="mb-5" />
     <nuxt-content
       :document="article"
-      class="hoge"
+      class="mb-8"
     />
     <nuxt-link
       v-for="tag in article.tags"
@@ -36,7 +36,7 @@
       class="p-column__tag"
     >
       <v-chip
-        class="ma-2"
+        class="inline-block mt-4 mr-4"
         label
         outlined
       >
@@ -87,7 +87,6 @@
 @import "~assets/scss/mixins.scss";
 .p-column {
   &__time {
-    font-weight: bold;
     color: $clr-gray;
   }
   &__tag {

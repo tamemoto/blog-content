@@ -6,7 +6,7 @@
       cols="12"
       class="mb-5"
     >
-      <a :href="item.product.url" target="_blank" class="p-card">
+      <a :href="item.product.url" target="_blank" class="block p-card">
         <v-card
           outlined
           class="mx-auto"
@@ -63,7 +63,6 @@
 <style lang="scss" scoped>
   @import "~assets/scss/mixins.scss";
   .p-card {
-    display: block;
     text-decoration: none;
     &__text {
       word-break: break-all;

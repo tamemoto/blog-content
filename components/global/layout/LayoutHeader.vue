@@ -26,7 +26,6 @@
                 navs: [
                     { name: "WEB", link: '/categories/web' },
                     { name: "DESIGN", link: '/categories/design' },
-                    { name: "THOUGHT", link: '/categories/thought' },
                     { name: "PRODUCTS", link: '/products' },
                 ]
             }
