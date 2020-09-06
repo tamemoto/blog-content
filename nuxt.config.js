@@ -1,3 +1,4 @@
+require("dotenv").config()
 
 export default {
   /*
@@ -9,6 +10,10 @@ export default {
   ** Nuxt target
   ** See https://nuxtjs.org/api/configuration-target
   */
+  env: {
+    APP_GANALITICS_UA: process.env.APP_GANALITICS_UA
+  },
+
   target: 'server',
   /*
   ** Headers of the page
@@ -39,6 +44,7 @@ export default {
   ** https://nuxtjs.org/guide/plugins
   */
   plugins: [
+    {src: '@/plugins/ga.js', mode: 'client'},
   ],
   /*
   ** Auto import components
@@ -50,6 +56,7 @@ export default {
   */
   buildModules: [
     '@nuxtjs/vuetify',
+    '@nuxtjs/dotenv'
   ],
   /*
   ** Nuxt.js modules
