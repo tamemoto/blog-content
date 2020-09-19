@@ -65,6 +65,13 @@ export default {
   modules: [
     '@nuxt/content'
   ],
+  content: {
+    markdown: {
+      prism: {
+        theme: "prism-themes/themes/prism-cb.css"
+      }
+    }
+  },
   /*
   ** Build configuration
   ** See https://nuxtjs.org/api/configuration-build/

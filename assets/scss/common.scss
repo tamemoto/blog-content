@@ -34,6 +34,22 @@
       pre[class*="language-"] {
         -webkit-overflow-scrolling: touch;
       }
+      code {
+        color: $clr-gray;
+        font-weight: bold;
+        font-size: .875em;
+        background-color: #f7fafc;
+        padding: .25rem;
+        border-width: 1px;
+        border-color: #edf2f7;
+        border-radius: .25rem;
+      }
+      .nuxt-content-highlight {
+        code {
+          color: #862fc5;
+          background: none;
+        }
+      }
     }
   }
 }

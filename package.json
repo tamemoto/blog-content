@@ -12,7 +12,8 @@
     "@babel/polyfill": "^7.10.4",
     "@nuxt/content": "^1.6.1",
     "dayjs": "^1.8.34",
-    "nuxt": "^2.14.0"
+    "nuxt": "^2.14.0",
+    "prism-themes": "^1.4.0"
   },
   "devDependencies": {
     "@babel/core": "^7.11.4",
