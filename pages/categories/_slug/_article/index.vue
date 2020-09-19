@@ -1,7 +1,7 @@
 <template>
   <v-container fluid>
     <v-img
-      :src="`/images/${article.category}/${article.image}`"
+      :src="`/images/${article.category}/${article.slug}/${article.image}`"
       :aspect-ratio="16/9"
       height="400"
       class="mx-auto mb-5"

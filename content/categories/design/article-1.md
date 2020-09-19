@@ -2,7 +2,7 @@
 title: サイボウズのUI/UXリサーチインターンに参加してきたよ！
 description: 先月サイボウズのUI/UXリサーチを体験するインターンに参加してきました。新型コロナウイルスの影響でオンラインでの開催となりましたが、無事に終えることができました。
 date: 2020-05-23
-image: article-1.jpg
+image: main.jpg
 tags: [UXデザイン]
 category: design
 ---

@@ -31,6 +31,12 @@
       a {
         color: #2d8fd5;
       }
+      ul {
+        margin-bottom: 42px;
+        @include desktop {
+          line-height: 58px;
+        }
+      }
       pre[class*="language-"] {
         -webkit-overflow-scrolling: touch;
       }

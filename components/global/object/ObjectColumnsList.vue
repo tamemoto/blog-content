@@ -16,7 +16,7 @@
         <div class="c-card__item">
           <div class="c-card__image">
             <v-img
-              :src="`/images/${item.category}/${item.image}`"
+              :src="`/images/${item.category}/${item.slug}/${item.image}`"
               :aspect-ratio="16/9"
               alt="アイキャッチ画像"
               width="100%"
@@ -65,7 +65,6 @@
               columns: [
                   { color: "#336db4", value: "web" },
                   { color: "#7c6766", value: "design" },
-                  { color: "#b84640", value: "thought" },
                   { color: "#98CA6F", value: "product" },
               ]
           }
