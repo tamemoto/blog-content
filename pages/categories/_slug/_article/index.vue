@@ -48,7 +48,18 @@
 
 <script>
   import { dateService } from "@/service/DateService"
+  import meta from "@/meta/meta"
   export default {
+      head() {
+          return {
+              title: this.article.title,
+              meta: [...meta({
+                  title: this.article.title,
+                  description: this.article.description,
+                  image: `/images/${this.article.category}/${this.article.image}`
+                  })]
+          }
+      },
       data() {
           return {
               columns: [

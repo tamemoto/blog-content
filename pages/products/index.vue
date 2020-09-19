@@ -50,14 +50,26 @@
 </template>
 
 <script>
-    export default {
-        async asyncData({ $content }) {
-            const products = await $content("products").fetch()
-            return {
-                products
-            }
+import meta from "@/meta/meta"
+export default {
+    head() {
+        return {
+            title: "ポートフォリオ | tameblog",
+            meta: [
+                ...meta({
+                    title: "ポートフォリオ一覧",
+                    description: "今まで制作したポートフォリオ"
+                })
+            ]
+        }
+    },
+    async asyncData({ $content }) {
+        const products = await $content("products").fetch()
+        return {
+            products
         }
     }
+}
 </script>
 
 <style lang="scss" scoped>

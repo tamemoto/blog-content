@@ -11,7 +11,16 @@
 </template>
 
 <script>
+  import meta from "@/meta/meta"
     export default {
+        head() {
+            return {
+                title: "カテゴリー記事一覧 | tameblog",
+                meta: [...meta({
+                    description: "カテゴリー記事一覧"
+                })]
+            }
+        },
         async asyncData ({ $content, params }) {
             const categories = await $content('categories', params.slug).fetch()
             return {

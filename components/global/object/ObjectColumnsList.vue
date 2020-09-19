@@ -10,6 +10,7 @@
         outlined
         class="mx-auto c-card"
         width="100%"
+        nuxt
         :to="`${item.path}`"
       >
         <div class="c-card__item">
