@@ -2,8 +2,8 @@
 title: Vue Routerでwatchの挙動につまづいた
 description: 今まではあまり使ってこなかったwatchでしたが、ついこないだ遭遇してつまづいてしまいました。今回はその備忘録として残します。
 date: 2020-04-10
-image: article-1.jpg
-tags: [Nuxt.js]
+image: main.jpg
+tags: [Nuxt.js,Vue.js]
 category: web
 ---
 
