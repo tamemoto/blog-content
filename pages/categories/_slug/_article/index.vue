@@ -47,51 +47,51 @@
 </template>
 
 <script>
-  import { dateService } from "@/service/DateService"
-  import meta from "@/meta/meta"
-  export default {
-      head() {
-          return {
-              title: this.article.title,
-              meta: [...meta({
-                  title: this.article.title,
-                  description: this.article.description,
-                  image: `/images/${this.article.category}/${this.article.image}`
-                  })]
-          }
-      },
-      data() {
-          return {
-              columns: [
-                  { color: "#336db4", value: "web" },
-                  { color: "#7c6766", value: "design" },
-                  { color: "#b84640", value: "thought" },
-                  { color: "#98CA6F", value: "product" },
-              ]
-          }
-      },
-      async asyncData({ $content, params }) {
-          const article = await $content(`/categories/${params.slug}/${params.article}`).fetch()
-          return {
-              article
-          }
-      },
-      computed: {
-          categoryColor() {
-              return (category) => {
-                  const { color } = this.columns.find(column => {
-                      return column.value === category
-                  })
-                  return color
-              }
-          },
-          dateTime() {
-              return time => {
-                  return dateService.publishedAt(time)
-              }
-          }
-      }
-  }
+import { dateService } from "@/service/DateService"
+import meta from "@/meta/meta"
+export default {
+    head() {
+        return {
+            title: this.article.title,
+            meta: [...meta({
+                title: this.article.title,
+                description: this.article.description,
+                image: `/images/${this.article.category}/${this.article.slug}/${this.article.image}`
+                })]
+        }
+    },
+    data() {
+        return {
+            columns: [
+                { color: "#336db4", value: "web" },
+                { color: "#7c6766", value: "design" },
+                { color: "#b84640", value: "thought" },
+                { color: "#98CA6F", value: "product" },
+            ]
+        }
+    },
+    async asyncData({ $content, params }) {
+        const article = await $content(`/categories/${params.slug}/${params.article}`).fetch()
+        return {
+            article
+        }
+    },
+    computed: {
+        categoryColor() {
+            return (category) => {
+                const { color } = this.columns.find(column => {
+                    return column.value === category
+                })
+                return color
+            }
+        },
+        dateTime() {
+            return time => {
+                return dateService.publishedAt(time)
+            }
+        }
+    }
+}
 </script>
 
 <style lang="scss" scoped>
