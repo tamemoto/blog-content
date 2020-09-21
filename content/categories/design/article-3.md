@@ -40,23 +40,23 @@ category: design
 
 **改善前**
 <p>
-  <img src="https://tamblog.net/images/design/article-3/image1.png" alt="改善前の画像"/>
+  <img src="https://tamblog.net/images/design/article-3/image-before.png" alt="改善前の画像"/>
 </p>
 
 
 **改善前(色分け)**
 <p>
-  <img src="https://tamblog.net/images/design/article-3/image2.png" alt="改善前の画像 色分け"/>
+  <img src="https://tamblog.net/images/design/article-3/image-before-color.png" alt="改善前の画像 色分け"/>
 </p>
 
 **改善後**
 <p>
-  <img src="https://tamblog.net/images/design/article-3/image3.png" alt="改善後の画像"/>
+  <img src="https://tamblog.net/images/design/article-3/image-after.png" alt="改善後の画像"/>
 </p>
 
 **改善後(色分け)**
 <p>
-  <img src="https://tamblog.net/images/design/article-3/image4.png" alt="改善後の画像 色分け"/>
+  <img src="https://tamblog.net/images/design/article-3/image-after-color.png" alt="改善後の画像 色分け"/>
 </p>
 
 
