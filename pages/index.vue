@@ -12,7 +12,7 @@
 <script>
 export default {
     async asyncData ({ $content }) {
-        const lists = await $content('categories', { deep: true }).fetch()
+        const lists = await $content('categories', { deep: true }).sortBy('date', 'desc').fetch()
         return {
             lists
         }

@@ -22,7 +22,7 @@
             }
         },
         async asyncData ({ $content, params }) {
-            const relatedArticles = await $content('categories', { deep: true }).where({'tags': {$contains: [params.slug]}}).fetch()
+            const relatedArticles = await $content('categories', { deep: true }).where({'tags': {$contains: [params.slug]}}).sortBy('date', 'desc').fetch()
             return {
                 relatedArticles
             }

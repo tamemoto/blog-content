@@ -22,7 +22,7 @@
             }
         },
         async asyncData ({ $content, params }) {
-            const categories = await $content('categories', params.slug).fetch()
+            const categories = await $content('categories', params.slug).sortBy('date', 'desc').fetch()
             return {
                 categories
             }
