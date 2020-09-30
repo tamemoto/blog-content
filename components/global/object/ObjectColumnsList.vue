@@ -27,9 +27,6 @@
             <v-card-title class="font-weight-bold">
               {{ item.title }}
             </v-card-title>
-            <v-card-text class="c-card__text">
-              {{ item.description }}
-            </v-card-text>
             <span class="c-card__time pl-4">
               {{ dateTime(item.date) }}
             </span>
@@ -64,8 +61,7 @@
           return {
               columns: [
                   { color: "#336db4", value: "web" },
-                  { color: "#7c6766", value: "design" },
-                  { color: "#98CA6F", value: "product" },
+                  { color: "#d82a2a", value: "design" }
               ]
           }
       },

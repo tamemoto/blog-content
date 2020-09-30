@@ -1,5 +1,5 @@
 <template>
-  <v-app-bar elevation="0" app>
+  <v-app-bar elevation="0">
     <v-spacer />
     <v-toolbar-title>
       <router-link to="/" aria-label="トップページへ戻る">

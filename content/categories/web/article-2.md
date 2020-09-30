@@ -1,6 +1,5 @@
 ---
 title: nuxt/contentではscopedに注意すること
-description: このブログを作成する際にnuxt/contentを使用したのですが、Scopedに悩まされたので
 date: 2020-09-21
 image: main.jpg
 tags: [Nuxt.js]
