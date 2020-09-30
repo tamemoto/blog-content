@@ -45,6 +45,9 @@
       color: $clr-black;
     }
   }
+  .v-toolbar {
+    flex: none;
+  }
   .l-nav {
     &__tab::v-deep {
       .v-slide-group__wrapper {
