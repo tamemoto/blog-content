@@ -1,7 +1,7 @@
 ---
 title: サイボウズのUI/UXリサーチインターンに参加してきたよ！
 date: 2020-05-23
-image: main.jpg
+image: article-1.jpg
 tags: [UXデザイン]
 category: design
 ---

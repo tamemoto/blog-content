@@ -1,7 +1,7 @@
 ---
 title: DeNA UI/UXサマーインターン2020に参加してきた!
 date: 2020-09-05
-image: main.jpg
+image: article-2.jpg
 tags: [UIデザイン,UXデザイン,インターン]
 category: design
 ---

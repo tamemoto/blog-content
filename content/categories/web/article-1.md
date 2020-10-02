@@ -1,7 +1,7 @@
 ---
 title: Vue Routerでwatchの挙動につまづいた
 date: 2020-04-10
-image: main.jpg
+image: article-1.jpg
 tags: [Nuxt.js,Vue.js]
 category: web
 ---

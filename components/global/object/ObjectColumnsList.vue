@@ -16,7 +16,7 @@
         <div class="c-card__item">
           <div class="c-card__image">
             <v-img
-              :src="`/images/${item.category}/${item.slug}/${item.image}`"
+              :src="`/images/${item.category}/${item.image}`"
               :aspect-ratio="16/9"
               alt="アイキャッチ画像"
               width="100%"

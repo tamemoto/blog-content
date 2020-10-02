@@ -2,7 +2,7 @@
   <div>
     <v-container fluid>
       <v-img
-        :src="`/images/${article.category}/${article.slug}/${article.image}`"
+        :src="`/images/${article.category}/${article.image}`"
         :aspect-ratio="16/9"
         height="400"
         class="mx-auto mb-5"
@@ -58,7 +58,7 @@ export default {
             title: this.article.title,
             meta: [...meta({
                 title: this.article.title,
-                image: `/images/${this.article.category}/${this.article.slug}/${this.article.image}`
+                image: `/images/${this.article.category}/${this.article.image}`
                 })]
         }
     },
@@ -66,9 +66,7 @@ export default {
         return {
             columns: [
                 { color: "#336db4", value: "web" },
-                { color: "#7c6766", value: "design" },
-                { color: "#b84640", value: "thought" },
-                { color: "#98CA6F", value: "product" },
+                { color: "#d82a2a", value: "design" }
             ]
         }
     },

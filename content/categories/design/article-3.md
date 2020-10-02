@@ -1,7 +1,7 @@
 ---
 title: Yahoo サマーインターン2020に参加してきた!
 date: 2020-09-19
-image: main.jpg
+image: article-3.jpg
 tags: [UIデザイン,インターン]
 category: design
 ---
@@ -39,23 +39,23 @@ category: design
 
 **改善前**
 <p>
-  <img src="https://tamblog.net/images/design/article-3/image-before.png" alt="改善前の画像"/>
+  <img src="https://drive.google.com/uc?export=view&id=1ctyh6DLPCPQ7R4uHbgUp2c72avYlQYaL" alt="改善前の画像"/>
 </p>
 
 
 **改善前(色分け)**
 <p>
-  <img src="https://tamblog.net/images/design/article-3/image-before-color.png" alt="改善前の画像 色分け"/>
+  <img src="https://drive.google.com/uc?export=view&id=18XcZ6CcYuf7KNs6DiIkCB4zvgisxGAmo" alt="改善前の画像 色分け"/>
 </p>
 
 **改善後**
 <p>
-  <img src="https://tamblog.net/images/design/article-3/image-after.png" alt="改善後の画像"/>
+  <img src="https://drive.google.com/uc?export=view&id=1wgHmMFgoFio6SATY0fTeGQpS6xbYze1v" alt="改善後の画像"/>
 </p>
 
 **改善後(色分け)**
 <p>
-  <img src="https://tamblog.net/images/design/article-3/image-after-color.png" alt="改善後の画像 色分け"/>
+  <img src="https://drive.google.com/uc?export=view&id=1rcRX4BpQw-Xs-EDDipS2wzZ_tnJhXA46" alt="改善後の画像 色分け"/>
 </p>
 
 
