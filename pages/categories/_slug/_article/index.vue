@@ -45,7 +45,7 @@
         </v-chip>
       </nuxt-link>
     </v-container>
-    <LayoutProfile />
+    <ObjectProfile />
   </div>
 </template>
 
