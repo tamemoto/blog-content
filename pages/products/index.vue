@@ -58,7 +58,8 @@ export default {
             meta: [
                 ...meta({
                     title: "ポートフォリオ一覧",
-                    description: "今まで制作したポートフォリオ"
+                    description: "今まで制作したポートフォリオ",
+                    type: "article"
                 })
             ]
         }

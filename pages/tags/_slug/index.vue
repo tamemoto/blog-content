@@ -17,7 +17,8 @@
             return {
                 title: "タグ関連一覧 | tameblog",
                 meta: [...meta({
-                    description: "タグ関連一覧"
+                    description: "タグ関連一覧",
+                    type: "article"
                 })]
             }
         },

@@ -58,7 +58,8 @@ export default {
             title: this.article.title,
             meta: [...meta({
                 title: this.article.title,
-                image: `/images/${this.article.category}/${this.article.image}`
+                image: `/images/${this.article.category}/${this.article.image}`,
+                type: "article"
                 })]
         }
     },

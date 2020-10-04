@@ -17,7 +17,8 @@
             return {
                 title: "カテゴリー記事一覧 | tameblog",
                 meta: [...meta({
-                    description: "カテゴリー記事一覧"
+                    description: "カテゴリー記事一覧",
+                    type: "article"
                 })]
             }
         },
