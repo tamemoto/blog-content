@@ -4,6 +4,9 @@
     a {
       color: $clr-black;
     }
+    .v-main {
+      display: block;
+    }
     .v-main__wrap {
       @include container
     }
