@@ -25,8 +25,25 @@ category: design
 自分が作ったアプリケーションは「食事にあまり興味が無い人向けのテイクアウトサービス」です。テイクアウト然りデリバリー然り毎回注文がめんどくさいんですよねー。
 そういう毎日の食事がルーティン化されている人のためのサービスを作成してみました。
 <p>
-  <img src="https://tamblog.net/images/design/article-2/main.jpg" alt="仮画像"/>
+  <img src="https://drive.google.com/uc?export=view&id=18FTx-4g_uyZxZLTJRSC7rr2ki11WQZDZ" loading="lazy" alt="メイン画像"/>
 </p>
+
+<p>
+  <img src="https://drive.google.com/uc?export=view&id=1MsmiZGOW1mUOdlZpv-qjomKDusPHRg2t" loading="lazy" alt="アプリの概要"/>
+</p>
+
+<p>
+  <img src="https://drive.google.com/uc?export=view&id=1uuM4rWAyYCkjnr0290VWRGny4nIr6znt" loading="lazy" alt="メイン画面"/>
+</p>
+
+<p>
+  <img src="https://drive.google.com/uc?export=view&id=1A39yOlPvkLHCV-86V2ZfDocSbl8yfmZn" loading="lazy" alt="決済フロー"/>
+</p>
+
+<p>
+  <img src="https://drive.google.com/uc?export=view&id=1SK1BD8w-g_hVgadD41Y_uerajaHIwYNy" loading="lazy" alt="リマインド機能"/>
+</p>
+
 
 ## アイディア出しからプロトタイプ作成
 各チームに分けられたあと、早速アイディア出しが始まりました。事前に発表されている店舗側の事情をまとめると以下のようなものでした。

@@ -17,7 +17,7 @@ nuxt/contentはNuxt.jsで使用できるとても強力なモジュールとな�
 nuxt/contentのファイル表示は独自の `<nuxt-content>`タグを記述してpageのbodyを表示します。[Contentを表示する](https://content.nuxtjs.org/ja/displaying)
 
 その際自動的に`.nuxt-content`というクラスが付与され、これを起点にスタイリングするのですがvueファイルのsccに`scoped`を指定されていると、スタイルは適応されません。
-<image src="https://drive.google.com/uc?export=view&id=1QUFC6WplgO9JeZmnNsrwK4rJtNqGoefs" alt="You can add the styles here or as a global style in your css folder"/>
+<image src="https://drive.google.com/uc?export=view&id=1QUFC6WplgO9JeZmnNsrwK4rJtNqGoefs" loading="lazy" alt="You can add the styles here or as a global style in your css folder"/>
 [#styling-our-markdown-content](https://ja.nuxtjs.org/blog/creating-blog-with-nuxt-content/#styling-our-markdown-content)
 
 スタイルを適応するためにはscopedを外すか、グロバールCSSで定義する必要があります。
