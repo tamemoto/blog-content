@@ -17,7 +17,6 @@
               <v-img
                 :src="item.image"
                 :aspect-ratio="16/9"
-                contain
                 width="100%"
                 class="ma-auto py-5 p-card__image"
               />

@@ -3,7 +3,7 @@ products:
     id: 1
     title: Profill
     text: WEB上で簡単にバーチャル名刺を作成できるアプリ
-    image: /images/products/work1/meishi.png
+    image: /images/products/work1.png
     url: https://profill-app.net/
     label: DEV
     tools:
@@ -35,7 +35,7 @@ products:
     id: 4
     title: ダリー
     text: 食事に無関心の人のためのテイクアウトサービス
-    image: /images/products/noimage.png
+    image: /images/products/work4.png
     url: https://student.redesigner.jp/portfolios/PF8ffc13f21ef12189078186d4ae6acb26
     label: UI
     tools:
