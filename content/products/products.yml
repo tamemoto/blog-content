@@ -1,0 +1,44 @@
+products:
+  -
+    id: 1
+    title: Profill
+    text: WEB上で簡単にバーチャル名刺を作成できるアプリ
+    image: /images/products/work1/meishi.png
+    url: https://profill-app.net/
+    label: DEV
+    tools:
+      - Nuxt.js
+      - tailwind
+  -
+    id: 2
+    title: 書籍管理アプリ
+    text: 研究室の書籍を管理するアプリ。ログイン時にはslackにログインURLが通知されます(一般利用ではありません)
+    image: /images/products/noimage.png
+    url: https://github.com/tamemoto/bookshelf_front
+    label: DEV
+    tools:
+      - Nuxt.js
+      - Laravel
+      - SlackAPI
+      - Vuetify
+  -
+    id: 3
+    title: tameblog
+    text: このブログです
+    image: /images/products/noimage.png
+    url: https://tamblog.net/
+    label: DEV
+    tools:
+      - Nuxt.js
+      - Vuetify
+  -
+    id: 4
+    title: ダリー
+    text: 食事に無関心の人のためのテイクアウトサービス
+    image: /images/products/noimage.png
+    url: https://student.redesigner.jp/portfolios/PF8ffc13f21ef12189078186d4ae6acb26
+    label: UI
+    tools:
+      - Figma
+
+

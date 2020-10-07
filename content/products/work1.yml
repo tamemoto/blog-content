@@ -1,7 +1,0 @@
-product:
-  id: 1
-  title: Profill
-  text: WEB上で簡単にバーチャル名刺を作成できるアプリ
-  image: /images/products/work1/meishi.png
-  url: https://unruffled-wozniak-c2de31.netlify.app/
-  label: アプリ

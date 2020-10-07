@@ -1,7 +1,0 @@
-product:
-  id: 2
-  title: 書籍管理アプリ
-  text: 研究室の書籍を管理するアプリ。ログイン時にはslackにログインURLが通知されます(一般利用ではありません)
-  image: /images/products/noimage.png
-  url: https://github.com/tamemoto/bookshelf_front
-  label: アプリ
