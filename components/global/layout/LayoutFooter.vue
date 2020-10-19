@@ -31,5 +31,6 @@
   }
   .v-footer {
     background: #f1f5f9;
+    color: $clr-gray;
   }
 </style>

@@ -2,8 +2,8 @@
   <v-app>
     <LayoutHeader />
     <v-main>
-      <div class="hoge">
-        <div class="hogehoge">
+      <div class="l-main">
+        <div class="l-main__content">
           <Nuxt />
         </div>
         <div class="l-profile">
@@ -19,17 +19,17 @@
 
 <style lang="scss" scoped>
   @import "~assets/scss/mixins.scss";
-  .hoge {
+  .l-main {
     display: block;
     @include desktop {
       display: flex;
       min-height: 85vh;
       align-items: flex-start;
     }
-  }
-  .hogehoge {
-    @include desktop {
-      width: calc((100% - 290px) - 40px);
+    &__content {
+      @include desktop {
+        width: calc((100% - 290px) - 40px);
+      }
     }
   }
   .l-profile {
