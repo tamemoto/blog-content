@@ -29,4 +29,7 @@
   .l-footer__container {
     @include container;
   }
+  .v-footer {
+    background: #f1f5f9;
+  }
 </style>

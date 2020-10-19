@@ -7,7 +7,9 @@ profile:
   tools:
     -
       icon: github
+      color: 333333
       url: https://github.com/tamemoto
     -
       icon: twitter
+      color: 1DA1F2
       url: https://twitter.com/yusuke_prog_web

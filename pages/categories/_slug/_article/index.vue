@@ -1,52 +1,48 @@
 <template>
-  <div>
-    <v-container fluid>
-      <v-img
-        :src="`/images/${article.category}/${article.image}`"
-        :aspect-ratio="16/9"
-        height="400"
-        class="mx-auto mb-5"
-        alt="アイキャッチ画像"
-      />
-      <section class="my-5">
-        <div class="p-column__time mb-5 font-weight-bold">
-          {{ dateTime(article.date) }}
-        </div>
-        <h1 class="mb-5">
-          {{ article.title }}
-        </h1>
-        <v-chip
-          small
-          dark
-          label
-          :color="categoryColor(article.category)"
-          class="font-weight-bold"
-        >
-          {{ article.category }}
-        </v-chip>
-      </section>
-      <v-divider class="mb-5" />
-      <nuxt-content
-        :document="article"
-        class="mb-8"
-      />
-      <nuxt-link
-        v-for="tag in article.tags"
-        :key="tag.index"
-        :to="`/tags/${tag}`"
-        class="p-column__tag"
+  <v-container fluid class="mb-6">
+    <v-img
+      :src="`/images/${article.category}/${article.image}`"
+      :aspect-ratio="16/9"
+      height="400"
+      class="mx-auto mb-5"
+      alt="アイキャッチ画像"
+    />
+    <section class="my-5">
+      <div class="p-column__time mb-5 font-weight-bold">
+        {{ dateTime(article.date) }}
+      </div>
+      <h1 class="mb-5">
+        {{ article.title }}
+      </h1>
+      <v-chip
+        small
+        dark
+        label
+        :color="categoryColor(article.category)"
+        class="font-weight-bold"
       >
-        <v-chip
-          class="inline-block mt-4 mr-4"
-          label
-          outlined
-        >
-          #{{ tag }}
-        </v-chip>
-      </nuxt-link>
-    </v-container>
-    <ObjectProfile />
-  </div>
+        {{ article.category }}
+      </v-chip>
+    </section>
+    <v-divider class="mb-5" />
+    <nuxt-content
+      :document="article"
+    />
+    <nuxt-link
+      v-for="tag in article.tags"
+      :key="tag.index"
+      :to="`/tags/${tag}`"
+      class="p-column__tag"
+    >
+      <v-chip
+        class="inline-block mt-4 mr-4"
+        label
+        outlined
+      >
+        #{{ tag }}
+      </v-chip>
+    </nuxt-link>
+  </v-container>
 </template>
 
 <script>

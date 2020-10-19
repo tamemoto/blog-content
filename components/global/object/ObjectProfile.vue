@@ -1,25 +1,10 @@
 <template>
-  <div v-if="profile" class="mx-auto my-8 px-4">
+  <div v-if="profile">
     <div>
-      <div class="mb-2 text-right">
-        <a
-          v-for="tool in profile.tools"
-          :key="tool.index"
-          :href="`${tool.url}`"
-          :aria-label="`${tool.icon}`"
-          target="_blank"
-          rel="noopener"
-          class="l-profile__link inline-block ma-2"
-        >
-          <v-icon>
-            mdi-{{ tool.icon }}
-          </v-icon>
-        </a>
-      </div>
       <v-sheet rounded outlined>
-        <div class="px-10 py-8">
-          <div class="d-flex justify-center">
-            <v-avatar size="75">
+        <div class="px-6 py-4">
+          <div class="d-flex justify-between align-center mb-4">
+            <v-avatar size="68">
               <v-img
                 :src="`${profile.image}`"
                 alt="プロフィール画像"
@@ -29,10 +14,25 @@
               <span class="font-weight-bold">
                 {{ profile.name }}
               </span>
-              <p class="inline-block mb-0">
-                {{ profile.description }}
-              </p>
             </div>
+          </div>
+          <p class="inline-block mb-4">
+            {{ profile.description }}
+          </p>
+          <div class="c-icon">
+            <a
+              v-for="tool in profile.tools"
+              :key="tool.index"
+              :href="`${tool.url}`"
+              :aria-label="`${tool.icon}`"
+              target="_blank"
+              rel="noopener"
+              class="c-profile__link inline-block mx-2"
+            >
+              <v-icon :color="`#${tool.color}`">
+                mdi-{{ tool.icon }}
+              </v-icon>
+            </a>
           </div>
         </div>
       </v-sheet>
@@ -56,17 +56,20 @@
 
 <style lang="scss" scoped>
   @import "~@/assets/scss/mixins.scss";
-  .l-footer {
-    &__bg {
-      background: $clr-black;
-    }
-  }
-  .l-profile {
+  .c-profile {
     &__name {
       color: $clr-gray;
     }
     &__link {
       text-decoration: none;
+      & .v-icon {
+        font-size: 50px;
+      }
+    }
+  }
+  .c-icon {
+    @include desktop {
+      text-align: center;
     }
   }
 </style>
