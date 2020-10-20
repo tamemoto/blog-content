@@ -1,7 +1,7 @@
 <template>
   <div v-if="profile">
     <div>
-      <v-sheet rounded outlined>
+      <v-sheet rounded>
         <div class="px-6 py-4">
           <div class="d-flex justify-between align-center mb-4">
             <v-avatar size="68">

@@ -21,14 +21,18 @@
   @import "~assets/scss/mixins.scss";
   .l-main {
     display: block;
+    border-bottom: 1px solid $clr-white;
     @include desktop {
       display: flex;
       min-height: 85vh;
       align-items: flex-start;
     }
     &__content {
+      background: $clr-white;
+      margin-bottom: 24px;
       @include desktop {
         width: calc((100% - 290px) - 40px);
+        margin: 24px 0 36px 0;
       }
     }
   }

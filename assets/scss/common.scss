@@ -1,6 +1,7 @@
 @import "mixins";
 .theme--light {
   &.v-application {
+    background: $bg-color !important;
     a {
       color: $clr-black;
     }
