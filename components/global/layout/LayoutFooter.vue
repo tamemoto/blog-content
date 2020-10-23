@@ -1,5 +1,5 @@
 <template>
-  <v-footer>
+  <v-footer class="l-footer">
     <v-container fluid>
       <div class="l-footer__container px-8 py-6">
         <p v-if="policy" class="mb-0">
@@ -26,8 +26,11 @@
 
 <style lang="scss" scoped>
   @import "~assets/scss/mixins.scss";
-  .l-footer__container {
-    @include container;
+  .l-footer {
+    border-top: solid 2px $clr-white;
+    &__container {
+      @include container;
+    }
   }
   .v-footer {
     background: #f1f5f9;

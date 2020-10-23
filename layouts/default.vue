@@ -21,7 +21,6 @@
   @import "~assets/scss/mixins.scss";
   .l-main {
     display: block;
-    border-bottom: 1px solid $clr-white;
     @include desktop {
       display: flex;
       min-height: 85vh;
