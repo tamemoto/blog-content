@@ -1,5 +1,5 @@
 <template>
-  <v-app-bar elevation="0">
+  <v-app-bar>
     <v-spacer />
     <v-toolbar-title>
       <router-link to="/" aria-label="トップページへ戻る">
@@ -10,7 +10,7 @@
     </v-toolbar-title>
     <v-spacer />
     <template v-slot:extension>
-      <v-tabs hide-slider centered fixed-tabs class="l-nav__tab">
+      <v-tabs hide-slider centered fixed-tabs class="c-nav__tab">
         <v-tab v-for="nav in navs" :key="nav.index" :to="nav.link" style="width: 90%">
           {{ nav.name }}
         </v-tab>
@@ -37,7 +37,7 @@
   @import "~@/assets/scss/mixins.scss";
   .theme--light.v-app-bar.v-toolbar.v-sheet {
     background: $clr-white;
-    border-bottom: solid 1px $clr-lightgray;
+    box-shadow: 0 2px 4px rgba(67,133,187, .05);
   }
   .v-application .c-nav {
     &__link {
@@ -48,7 +48,7 @@
   .v-toolbar {
     flex: none;
   }
-  .l-nav {
+  .-nav {
     &__tab::v-deep {
       .v-slide-group__wrapper {
         overflow: auto;

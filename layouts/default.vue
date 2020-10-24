@@ -29,6 +29,7 @@
     &__content {
       background: $clr-white;
       margin-bottom: 24px;
+      box-shadow: 0 2px 4px rgba(67,133,187, .05);
       @include desktop {
         width: calc((100% - 290px) - 40px);
         margin: 24px 0 36px 0;

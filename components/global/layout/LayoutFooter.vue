@@ -27,13 +27,12 @@
 <style lang="scss" scoped>
   @import "~assets/scss/mixins.scss";
   .l-footer {
-    border-top: solid 2px $clr-white;
     &__container {
       @include container;
     }
   }
   .v-footer {
-    background: #f1f5f9;
+    background: $clr-white;
     color: $clr-gray;
   }
 </style>

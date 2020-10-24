@@ -1,6 +1,6 @@
 <template>
   <div v-if="profile">
-    <div>
+    <div class="c-profile">
       <v-sheet rounded>
         <div class="px-6 py-4">
           <div class="d-flex justify-between align-center mb-4">
@@ -57,6 +57,7 @@
 <style lang="scss" scoped>
   @import "~@/assets/scss/mixins.scss";
   .c-profile {
+    box-shadow: 0 2px 4px rgba(67,133,187, .05);
     &__name {
       color: $clr-gray;
     }
