@@ -2,18 +2,23 @@
 title: cocoda!のトップページをリデザインしてみました
 date: 2020-10-25
 image: article-4.jpg
-tags: [UIデザイン]
+tags: [UIデザイン,デザイン改善]
 category: design
 ---
 
 ## 日本最大級のデザインカンファレンス
-今年の10月24日、25日にDesignShip2020が開催されました！オンライン開催での開催でしたが、Twitter場ではものすごく盛り上がっていたのを覚えています(参加したかった、、)。
+今年の10月24日、25日にDesignShip2020が開催されました！オンライン開催での開催でしたが、Twitterではものすごく盛り上がっていたのを覚えています(参加したかった、、)。
 それに伴い、cocoda!とコラボしたDesignShip Challengeが開催されています。[DesignShip Challenge2020](https://designship-challenge.cocoda.design/)
-様々なお題が存在するのですが、デジタル部門から「Service」を実際にやってみました。
+様々なお題が存在するのですが、デジタル部門から「Service」を実際にやってみました。課題としては「cocoda!のトップページのデザイン改善」といった内容です。
 
-## cocoda!のサービス設計
+
+## 現状のデザイン
+現状のファーストビューは以下のような感じです。
+<p>
+  <img src="https://drive.google.com/uc?export=view&id=1sXWOw1NErUrvPXh-hvLJqmzWr5S0I-9T" loading="lazy" alt="header"/>
+</p>
+
 cocoda!のサービス設計の詳細はこのような形となっています。[cocoda!のサービス設計](https://www.notion.so/Cocoda-2020-10-a2e7407b192a46eb9b9d3b8f3d102ee6)
-
 今回のお題はサービスのデザイン改善のため、現行のデザインに沿ったかたちで行なっていきます。
 
 ### サービスの問題点
