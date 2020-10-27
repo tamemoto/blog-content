@@ -21,7 +21,7 @@ $ npx create-nuxt-app nuxt-sample-app
 インストールが再開されると、プロジェクトに関して質問をたずねられます。基本はEnterで良いですが、`Choose the package manager?`のセクションでは`npm`を選択しました。
 インストールはyarnの方が早いと言われていますが、最近はそこまで大差はありません。
 
-プロジェクトの作成が完了すると、以下のコマンドを叩いて初期画面が表示されれば成功です。
+プロジェクトの作成が完了すると、プロジェクト直下に移動し、初期画面が表示されれば成功です。
 ``bash
 $ cd nuxt-sample-app
 $ npm run dev
@@ -46,7 +46,7 @@ $ firebase login
 $ firebase init
 ```
 
-すると以下のような質問を尋ねられるでしょう
+すると以下のような質問を順番に尋ねられるでしょう
 ```
 === Project Setup
 
@@ -78,12 +78,12 @@ i  Writing project information to .firebaserc...
 
 `? Please select an option`では `Use an existing project` から、先ほどfirebaseコンソールで追加したプロジェクトを選択しましょう。
 
-Nuxt.jsがbuild時に吐き出されるフォルダ名は `dist`であるため `? What do you want to use as your public directory`では `dist`と打ち込み、次へ進みます。
+Nuxt.jsのデフォルトの設定では、静的ファイルが生成されるフォルダ名は `dist`であるため `? What do you want to use as your public directory`では `dist`と打ち込み、次へ進みます。
 
 今回は静的サイトでホスティングするため、`Configure as a single-page app (rewrite all urls to /index.html)?`では `No`と打ち込みます。
 正常に動作すると、`Firebase initialization complete!` と表示され、新たに`firebase.json` `.firebaserc` `.firebase`が作成されます。
 
-アプリケーションをgithubで管理している場合はgithub上にあげないようにするため.gitignoreファイルに以下を追加しましょう。
+アプリケーションをgithubで管理している場合はgithub上にあげないようにするため`.gitignore`ファイルに以下を追加しましょう。
 ```bash
 .firebaserc
 .firebase
