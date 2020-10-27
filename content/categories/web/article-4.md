@@ -30,6 +30,10 @@ $ npm run dev
 ## 実際にデプロイしてみよう
 Firebaseには非常に簡単にプロジェクトのデプロイができるホスティング機能が備わっています。まずはFirebaseのコンソールに移動し、
 「プロジェクトの追加」から手順にしたがってFirebase内にプロジェクトを作成しましょう。
+<p>
+  <img src="https://drive.google.com/uc?export=view&id=1fwsv7xMODBdoMzuggIuTt-1_OA5kCiUw" loading="lazy" alt="コンソール画面"/>
+</p>
+
 
 Firebaseをコマンドラインツールで操作できるようにするため、firebase-toolsをインストールしましょう
 ```bash
