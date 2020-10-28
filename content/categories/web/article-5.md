@@ -45,6 +45,29 @@ module.exports = {
 }
 ```
 
+## グローバルCSS
+プロジェクト全範囲に適用したいCSSもあるかと思われます。
+まずは`assets`フォルダ内に新たに`css`フォルダを作成し、直下に`common.css`を作成しましょう。
+
+/assets/css/common.css
+```bash
+body {
+  background: #f7fafc;
+}
+```
+
+`nuxt.config.js`の`css`に適用したいcssファイルを記述することでアプリケーション全体に`common.css`で記述した内容が反映されます。
+
+/nuxt.config.js
+```js
+module.exports= {
+  //...
+  css: [
+    "~assets/css/common.css"
+  ],
+}
+```
+
 ## 画面レイアウトの調整
 画面全体の幅を調整したいときは`/layouts`フォルダ内を編集していきます。`/layouts`フォルダ内のvueコンポーネントファイルを明示的に指定しない限り、`default.vue`内の内容が適用されます。
 以下のような形でアプリケーションのレイアウトを調整しましょう。
