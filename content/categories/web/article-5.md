@@ -165,7 +165,7 @@ export default {}
 ## コンポーネントの分割
 画面自体は完成しましたが、今のままではコードが複雑で改修時の負担が大きいです。また将来的にページが増えていく場合はheader部分は使いまわしたいでしょう。
 そういった複数ページでコンポーネントを使い回したい場合は`/components`フォルダへモジュールを切り出します。`/components`フォルダ内に`layouts`フォルダを作成し、
-`LayoutsHeaer`を作成しましょう。
+`LayoutsHeaer.vue`を作成しましょう。
 
 /components/layouts/LayoutsHeader.vue
 ```vue
@@ -199,6 +199,7 @@ export default {}
 
 `/layouts/default.vue`に以下の内容を追加します。
 
+/layouts/default.vue
 ```vue
 <template>
   <div class="wrapper position-relative mx-auto bg-white shadow rounded px-4">
@@ -218,6 +219,7 @@ export default {}
 ```
 
 `/pages/index.vue`に戻り、headerに関する記述を削除します。
+
 /pages/index.vue
 ```vue
 <template>
