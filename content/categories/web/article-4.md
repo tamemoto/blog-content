@@ -1,8 +1,8 @@
 ---
-title: Nuxt.js+Firebaseで作る写真投稿アプリ(デプロイ編)
+title: Nuxt.js+Firebaseで作る写真投稿アプリ(環境構築編)
 date: 2020-10-28
 image: article-4.jpg
-tags: [Nuxt.js]
+tags: [Nuxt.js,Firebase]
 category: web
 ---
 
@@ -44,8 +44,7 @@ $ npm install firebase-tools --global
 ```bash
 $ firebase login
 ```
-
-以下のコマンドでfirebaseに関する設定を行なっていきます。
+自身のプロジェクトに戻り、ターミナルから、以下のコマンドでfirebaseに関する設定を行なっていきます。
 ```bash
 $ firebase init
 ```
