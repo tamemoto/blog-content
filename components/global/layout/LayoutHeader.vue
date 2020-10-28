@@ -4,7 +4,7 @@
     <v-toolbar-title>
       <router-link to="/" aria-label="トップページへ戻る">
         <h1>
-          <v-img width="128" :src="require('~/assets/images/logo.png')" />
+          <v-img width="178" :src="require('~/assets/images/logo.svg')" />
         </h1>
       </router-link>
     </v-toolbar-title>
