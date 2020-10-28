@@ -22,10 +22,10 @@ $ npx create-nuxt-app nuxt-sample-app
 インストールはyarnの方が早いと言われていますが、最近はそこまで大差はありません。
 
 プロジェクトの作成が完了すると、プロジェクト直下に移動し、初期画面が表示されれば成功です。
-``bash
+```bash
 $ cd nuxt-sample-app
 $ npm run dev
-``
+````
 
 ## 実際にデプロイしてみよう
 Firebaseには非常に簡単にプロジェクトのデプロイができるホスティング機能が備わっています。まずはFirebaseのコンソールに移動し、
@@ -41,17 +41,17 @@ $ npm install firebase-tools --global
 ```
 
 また、Googleアカウントの認証が完了していない方は認証を完了しておきましょう。
-```
+```bash
 $ firebase login
 ```
 
 以下のコマンドでfirebaseに関する設定を行なっていきます。
-```
+```bash
 $ firebase init
 ```
 
 すると以下のような質問を順番に尋ねられるでしょう
-```
+```bash
 === Project Setup
 
 First, let's associate this project directory with a Firebase project.
@@ -99,6 +99,6 @@ $ npm run generate
 ```
 
 最後に以下のコマンドでfirebaseにデプロイし、表示されたURLから正常に動作しているか確認してみましょう。
-```yaml
+```bash
 $ firebase deploy --only hosting
 ```
