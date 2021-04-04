@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "@babel/polyfill": "^7.10.4",
-    "@nuxt/content": "^1.6.1",
+    "@nuxt/content": "^1.14.0",
     "dayjs": "^1.8.34",
     "nuxt": "^2.14.0",
     "prism-themes": "^1.4.0"
@@ -24,6 +24,6 @@
     "babel-loader": "^8.1.0",
     "fibers": "^5.0.0",
     "sass": "^1.26.10",
-    "sass-loader": "^9.0.3"
+    "sass-loader": "^10.1.1"
   }
 }
