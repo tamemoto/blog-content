@@ -1,8 +1,7 @@
 profile:
   name: yusuke
   description : |
-    大阪のWEB会社でアルバイトをさせていただいてます。
-    Nuxt.js/Figma/UI/UX/etc
+    フロントエンドとデザイン
   image: /images/profile/duck.png
   tools:
     -
