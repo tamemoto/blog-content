@@ -2,9 +2,9 @@
   <v-footer class="l-footer">
     <v-container fluid>
       <div class="l-footer__container px-8 pt-6">
-        <p v-if="policy">
-          {{ policy.detail }}
-        </p>
+<!--        <p v-if="policy">-->
+<!--          {{ policy.detail }}-->
+<!--        </p>-->
         <div class="text-center">
           <small>
             © 2020, yusuke All rights reserved.
@@ -22,10 +22,10 @@
                 policy: null,
             }
         },
-        async mounted() {
-            const { policy } = await this.$content('policy').fetch()
-            this.policy = policy
-        }
+        // async mounted() {
+        //     const { policy } = await this.$content('policy').fetch()
+        //     this.policy = policy
+        // }
     }
 </script>
 
